@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
             _productDal = productDal;
         }
 
-        public void AddT(Product t)
+        public void InserT(Product t)
         {
             _productDal.Insert(t);
         }

@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
             _categoryDal = categoryDal;
         }
 
-        public void AddT(Category t)
+        public void InserT(Category t)
         {
             _categoryDal.Insert(t);
         }
@@ -42,5 +42,7 @@ namespace BusinessLayer.Concrete
         {
             _categoryDal.Update(t);
         }
+
+        
     }
 }

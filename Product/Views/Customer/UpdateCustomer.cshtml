@@ -13,8 +13,11 @@
     <br />
     @Html.Label("Müşteri Şehri")
     @Html.TextBoxFor(x=>x.City, new {@class="form-control"})    
-    <br />   
-    <button class="btn btn-info">Müşteri Bilgisini Güncelle</button>
+    <br />
+    @Html.Label("Müşteri Mesleği")
+    @Html.DropDownListFor(x=>x.JobID,(List<SelectListItem>)ViewBag.v, new {@class="form-control"})
+    <br />
+    <button class="btn btn-outline-info">Müşteri Bilgisini Güncelle</button>
 </form>
 
 

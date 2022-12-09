@@ -29,7 +29,7 @@ namespace Product_Demo.Controllers
             ValidationResult results = validationRules.Validate(p);
             if (results.IsValid)
             {
-                productManager.AddT(p);
+                productManager.InserT(p);
                 return RedirectToAction("Index");
             }
             else

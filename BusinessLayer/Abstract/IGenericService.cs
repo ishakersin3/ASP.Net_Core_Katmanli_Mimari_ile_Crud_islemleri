@@ -8,7 +8,7 @@ namespace BusinessLayer.Abstract
 {
     public interface IGenericService<T>
     {
-        public void AddT(T t);
+        public void InserT(T t);
         public void DeleteT(T t);
         public void UpdateT(T t);
         public List<T> TGetList();

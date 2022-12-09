@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
             _customerDal = customerDal;
         }
 
-        public void AddT(Customer t)
+        public void InserT(Customer t)
         {
             _customerDal.Insert(t);           
         }
@@ -26,6 +26,11 @@ namespace BusinessLayer.Concrete
         public void DeleteT(Customer t)
         {
             _customerDal.Delete(t);
+        }
+
+        public List<Customer> GetCustomersListWithJob()
+        {
+            return _customerDal.GetCustomerListWithJob();
         }
 
         public Customer TGetById(int id)
